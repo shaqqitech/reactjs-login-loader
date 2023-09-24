@@ -1,0 +1,39 @@
+@keyframes fall {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
+  @keyframes bounce-cubic {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  .animate-fall {
+    animation: fall 0.5s ease-in-out;
+  }
+  
+  .animate-bounce-initial {
+    animation: bounce-cubic 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transform: rotate(360deg);
+  }
+  
+  
+
+  
